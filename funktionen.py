@@ -47,11 +47,11 @@ def suchen():
 
 #ID Abfrage
 def idabfrage():
-        id_art = input("CID oder ID64: ")
-        if id_art == "CID" or "cid":
+        id_art = input("cod oder id64: ")
+        if id_art == "cid":
                 target = input("SteamCID: ")
                 return target
-        elif id_art == "id64" or "ID64":
+        elif id_art == "id64":
                 target = input("Steam64: ")
                 return target
         else:

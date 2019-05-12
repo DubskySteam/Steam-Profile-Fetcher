@@ -11,3 +11,4 @@ func.suchen()
 
 
 awaitinput = input("\n\nIrgendwas drücken")
+exit()
