@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 import urllib.request
 import os
 
+clear = lambda: os.system('cls')
 
 #Suchabfrage
 def suchen():
@@ -9,7 +10,7 @@ def suchen():
         tree = ET.parse(urllib.request.urlopen('http://steamcommunity.com/id/' + targetid +'/?xml=1'))  
         root = tree.getroot()
 
-        os.system('clear')
+        clear()
 
         steam64 = root[0].text
         steamid = root[1].text
@@ -20,19 +21,21 @@ def suchen():
         since = root[13].text
         groups = root[10].text
 
-        print('__________________________________')
-        print('[> Steam Profil Daten <]')
-        print('__________________________________')
-		print("Nutzer :> " + steamid)
-        print("Status :> " + status)
-        print("Beitritt :> " + since)
+        print("_________________________________")
+        print("[> Steam Profil Informationen <]")
+        print("_________________________________")
+        print("Nutzer: " + steamid)
+        print("Status: " + status)
+        print("Beitritt: " + since)
         print("")
-        print("64ID :> " + steam64)
-        print("Privacy :> " + privacy)
+        print("64ID: " + steam64)
+        print("Privacy: " + privacy)
         print("")
-        print("Trade Banned :> " + tban)
-        print("VAC Banned :> " + vban)
-        print('__________________________________')
+        print("Trade Banned: " + tban)
+        print("VAC Banned: " + vban)
+        print("_________________________________")
+        print("Gruppen")
+        print("_________________________________")
 
         x=0
         for group in root.findall('groups/group/groupID64'):

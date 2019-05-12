@@ -1,8 +1,16 @@
 # Steam-Profile-Fetcher
 
+## Dreckig und schnell, aber funktioniert ¯\_(ツ)_/¯
+
 Funktion:
 
-Dreckig aber funktioniert
+Dursucht die von Steam zur Verfügung gestellte XML File des gegeben Profils.
+Gesucht wird nach einem Profil mit der CustomID oder der Steam64 ID welche jeweils in der Profil URL gefunden werden kann.
 
-Soll mit einer gegebenen Steam 64 oder CustomID das Profil finden und wichtige Nutzerdaten zurückgeben.
-Die Nutzerdaten liegen in einem XML Format vor und werden vorher per urllib gezogen und geparsed.
+
+
+###### Beispiel:
+```
+1) cid
+2) dubskyplays
+```
