@@ -8,3 +8,6 @@ import funktionen as func
 ctypes.windll.kernel32.SetConsoleTitleA("Steam Profile Fetcher")
 
 func.suchen()
+
+
+awaitinput = input("\n\nIrgendwas drücken")
