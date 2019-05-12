@@ -6,6 +6,7 @@ import os
 
 ctypes.windll.kernel32.SetConsoleTitleA("Steam Profile Fetcher")
 
+#test
 #ID Abfrage
 def idabfrage():
         id_art = input("CID oder ID64: ")
