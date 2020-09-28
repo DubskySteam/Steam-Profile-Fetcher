@@ -4,7 +4,7 @@
 
 Funktion:
 
-Dursucht die von Steam zur Verfügung gestellte XML File des gegeben Profils.
+Durchsucht die von Steam zur Verfügung gestellte XML File des gegeben Profils.
 Gesucht wird nach einem Profil mit der CustomID oder der Steam64 ID welche jeweils in der Profil URL gefunden werden kann.
 Die XML Datei wird nach den üblichen tags dursucht und herausgefiltert / geparsed.
 
